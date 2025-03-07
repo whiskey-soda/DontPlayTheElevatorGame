@@ -27,7 +27,7 @@ public class PlayerMovement : MonoBehaviour
         cameraTransform = Camera.main.transform;
     }
 
-    void OnMove(InputValue input)
+    void OnWalk(InputValue input)
     {
         //updates x and z values of moveDirection vector according to player input
         Vector2 inputVector = input.Get<Vector2>();
