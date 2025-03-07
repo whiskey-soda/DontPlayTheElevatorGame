@@ -432,10 +432,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 7027658388681379672}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1403c523d9e50d94fad5f4bd3ea5b63f, type: 3}
+  m_Script: {fileID: 11500000, guid: 2222e554df6f0044c9a1203f43180eb8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  promptAboveObject: 0
+  promptAboveObject: 1
+  unitsAboveProp: 0.151
 --- !u!1001 &2762237450706550374
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -615,3 +616,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bb7ce00449eb50b4b9a1aafdd9f9dd8c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  maxOpenRotation: -115
+  rotateSpeed: 150
+  doorState: 1

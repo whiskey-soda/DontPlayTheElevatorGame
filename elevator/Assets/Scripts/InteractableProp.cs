@@ -3,13 +3,20 @@ using UnityEngine;
 
 public class InteractableProp : MonoBehaviour
 {
-
+    // prompt is a separate object to keep it from rotating with the prop
     GameObject prompt;
 
     protected virtual void Awake()
     {
-        prompt = transform.parent.GetComponentInChildren<InteractablePrompt>(true).gameObject;
+        prompt = transform.parent.GetComponentInChildren<PromptPositioning>(true).gameObject;
     }
+
+    // this gets overwritten by derived classes
+    public virtual void ProcessInteraction()
+    {
+        Debug.Log("Interaction detected");
+    }
+
 
     void ShowPrompt()
     {
@@ -19,12 +26,6 @@ public class InteractableProp : MonoBehaviour
     void HidePrompt()
     {
         prompt.SetActive(false);
-    }
-
-    // this gets overwritten by derived classes
-    public virtual void ProcessInteraction()
-    {
-        Debug.Log("Interaction detected");
     }
 
     private void OnTriggerEnter(Collider other)

@@ -2,11 +2,11 @@ using UnityEngine;
 
 [RequireComponent(typeof(RectTransform))]
 
-public class InteractablePrompt : MonoBehaviour
+public class PromptPositioning : MonoBehaviour
 {
     [Header("CONFIG")]
     [SerializeField] bool promptAboveObject = true;
-    float unitsAboveProp = .151f;
+    [SerializeField] float unitsAboveProp = .151f;
 
     //needed for positioning prompt above the prop collider
     Collider propCollider;
