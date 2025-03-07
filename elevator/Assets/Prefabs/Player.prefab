@@ -443,7 +443,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 2454321870563440067}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 700ad77bcf8029c43be40838eb3ddb8f, type: 3}
+  m_Script: {fileID: 11500000, guid: 915c2d09af85354449031dcddcc5fbfa, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   moveSpeed: 4
@@ -457,6 +457,7 @@ GameObject:
   m_Component:
   - component: {fileID: 7854376191869632580}
   - component: {fileID: 204735304316361677}
+  - component: {fileID: 4711288049079258380}
   m_Layer: 8
   m_Name: Interaction Field
   m_TagString: Untagged
@@ -498,5 +499,17 @@ BoxCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 1, y: 1.25, z: 4}
+  m_Size: {x: 1, y: 1, z: 3}
   m_Center: {x: 0, y: 0, z: 2}
+--- !u!114 &4711288049079258380
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4584564164084879188}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 54f621c5b928ee24b88e50707db17192, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
